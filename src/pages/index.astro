@@ -1,18 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-import Navbar from "../components/Navbar.astro";
+import { Navbar } from "../components/Navbar";
 import Disadvantages from "../components/Disadvantages.astro";
 import Example from "../components/Example.astro";
 import Footer from "../components/Footer.astro";
 import Intro from "../components/Intro.astro";
+import Definition from "../components/Definition.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <Navbar />
+<Layout title="Etica del Comunitarismo">
+  <Navbar client:only />
   <main>
+    <h1
+      class="text-5xl my-5 font-bold bg-gradient-to-r from-cyan-300 to-cyan-400 text-transparent bg-clip-text"
+    >
+      Etica del Comunitarismo
+    </h1>
     <Intro />
     <Example />
+    <Definition />
     <Disadvantages />
   </main>
   <Footer />
@@ -36,13 +43,6 @@ import Intro from "../components/Intro.astro";
     width: 220px;
     height: auto;
     z-index: -1;
-  }
-  h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 1em;
   }
   .text-gradient {
     background-image: var(--accent-gradient);
