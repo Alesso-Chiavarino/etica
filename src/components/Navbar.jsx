@@ -45,13 +45,13 @@ export const Navbar = () => {
               </button>
               <ul className="flex flex-col gap-4 mt-8">
                 <li onClick={() => setIsOpen(false)}>
-                  <a href="#intro">Introducción</a>
+                  <a href="#">Introducción</a>
                 </li>
                 <li onClick={() => setIsOpen(false)}>
                   <a href="#example">Ejemplo</a>
                 </li>
                 <li onClick={() => setIsOpen(false)}>
-                  <a href="#Definición">Definición</a>
+                  <a href="#definition">Definición</a>
                 </li>
                 <li onClick={() => setIsOpen(false)}>
                   <a href="#disadvantages">Desventajas</a>
