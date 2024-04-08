@@ -1,36 +1,55 @@
-<section>
-    <h2 class="text-3xl">Ejemplo del prisma:</h2>
-    <div class="font-serif italic">
-        <p>
-            <strong>- ¡Hola, bienvenido! ¿En qué puedo ayudarte?</strong><br />
-            - Hola, estoy buscando un fernet branca, porque el otro día se dio una
-            conversación en el curso sobre cuál era el mejor fernet. Quería llevar
-            uno para mostrarles a mis alumnos que sin duda es el mejor. Pero quisiera
-            hacerlo a escondidas, quiero ver si tienes alguna caja o algo para llevarlo
-            escondido o disfrazado.
-        </p>
-        <p>
-            <strong
-                >- ¿Como que llevar un fernet a un curso de un colegio? ¿A vos,
-                te parece eso correcto? ¿Qué pasa si te descubre el director o
-                si alguno de los alumnos cuenta que hiciste eso? Pensé que
-                venias a buscar uno para salir de fiesta hoy.</strong
-            ><br />
-            - Tenes razón, yo temía que me descubrieran que llevaba una bebida alcohólica
-            y seguro que era porque no era que iba a hacer lo correcto. Cuando era
-            chico solía pasarme, escondía cosas que hacía porque yo sabía que no
-            estaban bien.
-        </p>
-        <p>
-            <strong
-                >- Me parece bien, que bueno que te diste cuenta de que no era
-                correcto.</strong
-            ><br />
-            - Sí, llegué a la conclusión de que no debería llevar bebidas alcohólicas
-            a la clase. Iba a violar las normas de comportamiento en la escuela y
-            era obvio también que me estaba engañando al pensar que eso era correcto
-            o que tenía justificación. Pero bueno, igual lo llevo para salir de joda
-            ja ja.
-        </p>
-    </div>
+---
+import SectionTitle from "./SectionTitle.astro";
+---
+
+<section id="example" class="">
+  <SectionTitle title={"Ejemplo del Prisma"} />
+  <div class=" flex flex-col gap-5 example">
+    <p class="flex flex-col gap-2">
+      <span class=""
+        >- ¡Hola, bienvenido! ¿En qué puedo ayudarte?</span
+      >
+      <span class="text-cyan-300"
+        >- Hola, estoy buscando un fernet branca, porque el otro día se dio una
+        conversación en el curso sobre cuál era el mejor fernet. Quería llevar
+        uno para mostrarles a mis alumnos que sin duda es el mejor. Pero
+        quisiera hacerlo a escondidas, quiero ver si tienes alguna caja o algo
+        para llevarlo escondido o disfrazado.</span
+      >
+    </p>
+    <p class="flex flex-col gap-2">
+      <span class=""
+        >- ¿Como que llevar un fernet a un curso de un colegio? ¿A vos, te
+        parece eso correcto? ¿Qué pasa si te descubre el director o si alguno de
+        los alumnos cuenta que hiciste eso? Pensé que venias a buscar uno para
+        salir de fiesta hoy.</span
+      >
+      <span class="text-cyan-300"
+        >- Tenes razón, yo temía que me descubrieran que llevaba una bebida
+        alcohólica y seguro que era porque no era que iba a hacer lo correcto.
+        Cuando era chico solía pasarme, escondía cosas que hacía porque yo sabía
+        que no estaban bien.</span
+      >
+    </p>
+    <p class="flex flex-col gap-2">
+      <span class=""
+        >- Me parece bien, que bueno que te diste cuenta de que no era correcto.</span
+      >
+      <span class="text-cyan-300">
+        - Sí, llegué a la conclusión de que no debería llevar bebidas
+        alcohólicas a la clase. Iba a violar las normas de comportamiento en la
+        escuela y era obvio también que me estaba engañando al pensar que eso
+        era correcto o que tenía justificación. Pero bueno, igual lo llevo para
+        salir de joda ja ja.</span
+      >
+    </p>
+  </div>
 </section>
+
+
+<style is:inline>
+    .example {
+        font-family: 'Courier Prime', monospace;
+    }
+
+</style>
